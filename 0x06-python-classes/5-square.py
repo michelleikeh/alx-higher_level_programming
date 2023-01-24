@@ -2,8 +2,10 @@
 """Module containing the Square class"""
 class Square:
     """Define s a square class """
+    
     def __init__(size, size=0):
         """Initialize a square object """
+    
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -13,16 +15,19 @@ class Square:
 
     def area(self):
         """Return the area of the square"""
+        
         return (self.__size ** 2)
 
     @property
     def size(self):
         """ return the size value """
+        
         return self.__size
 
     @size.setter
     def size(self, value):
         """sets the value of the square"""
+        
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -34,6 +39,7 @@ class Square:
         """ prints a # square according
         to the size value
         """
+        
         if not self.__size:
             print()
         else:
