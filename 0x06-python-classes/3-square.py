@@ -3,10 +3,10 @@
 
 
 class Square:
-    """ defines a Square. """
+    """ defines a Square."""
    
     def __init__(self, size=0):
-        """ Initialize a new square.
+        """Initialize a new square.
 
         Args:
             size(int): the size of the new square.
@@ -18,5 +18,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        """ Return the area of the square. """
+        """Return the area of the square."""
         return (self.__size * self.__size)
