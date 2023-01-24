@@ -11,7 +11,6 @@ class Square:
         Args:
             size(int): the size of the new square.
         """
-   
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -20,5 +19,4 @@ class Square:
 
     def area(self):
         """ Return the area of the square. """
-   
         return (self.__size * self.__size)
