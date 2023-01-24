@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module containing the Node class"""
 class Node:
     def __init__(self, data, next_node=None):
         self.data = data

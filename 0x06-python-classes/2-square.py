@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-Class Square:
+"""Module containing the Square class"""
+class Square:
     """ Define a Square class. """
 
     def __init__(self, size=0):
