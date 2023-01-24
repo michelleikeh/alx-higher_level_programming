@@ -2,6 +2,7 @@
 """ Module containing the Square class
 """
 
+
 class Square:
 
     """ Define a Square class. 

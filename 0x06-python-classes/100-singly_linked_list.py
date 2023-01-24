@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Module containing the Node class"""
+
+
 class Node:
     """  A Class called Node """
 
