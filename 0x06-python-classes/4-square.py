@@ -4,7 +4,7 @@
 
 class Square:
     """ Represent a square. """
-    
+
     def __init__(self, size=0):
         """Initialie a new square.
 
@@ -20,7 +20,7 @@ class Square:
 
     def area(self):
         """Returns area of square """
-        return(self.__size * self.__size)
+        return (self.__size * self.__size)
 
     @property
     def size(self):
