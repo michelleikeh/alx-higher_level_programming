@@ -7,7 +7,7 @@ single-line `.txt` files.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX School.
 
 ## Tasks :page_with_curl:
 
@@ -297,9 +297,9 @@ to by `b` deleted?
   * [106-line5.txt](./106-line5.txt): How many `str` objects are created by the execution
 of the last line in this script?
 ```
-a = "HBTN"
-b = "HBTN"
+a = "SCHL"
+b = "SCHL"
 del a
 del b
-c = "HBTN"
+c = "SCHL"
 ```
