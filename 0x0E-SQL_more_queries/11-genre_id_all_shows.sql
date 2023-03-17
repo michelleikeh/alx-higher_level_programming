@@ -1,12 +1,8 @@
--- Script that lists genres by their rating
-SELECT tv_genres.name, SUM(tv_show_ratings.rate) AS rating -- Query to join tables
-FROM tv_genres
-JOIN tv_show_genres
-     ON tv_genres.id = tv_show_genres.genre_id
-JOIN tv_shows
-     ON tv_show_genres.show_id = tv_shows.id
-JOIN tv_show_ratings
-     ON tv_show_ratings.show_id = tv_shows.id
-GROUP BY tv_genres.name
-ORDER BY rating DESC;
-
+-- Lists all shows contained in the database hbtn_0d_tvshows.
+-- Displays NULL for shows without genres.
+-- Records are ordered by ascending tv_shows.title and tv_show_genres.genre_id.
+SELECT s.`title`, g.`genre_id`
+  FROM `tv_shows` AS s
+       LEFT JOIN `tv_show_genres` AS g
+       ON s.`id` = g.`show_id`
+ ORDER BY s.`title`, g.`genre_id`;
